@@ -1,0 +1,463 @@
+/* Global */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    color: black;
+    letter-spacing: 1px;
+    background-color: white;
+}
+
+h2 {
+    font-size: 3.75rem;
+    font-weight: 540;
+    text-align: center;
+}
+
+/* HEADER */
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    position: fixed;
+}
+
+header h1 {
+    font-size: 4rem;
+    font-weight: 520;
+    color: white;
+}
+
+.header__content {
+    width: 98%;
+    margin: 0 auto;
+    padding: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__content ul li {
+    list-style: none;
+    display: inline;
+}
+
+.header__content ul a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 10px 15px;
+    margin: 12px;
+    color: white;
+    border-bottom: solid 2px white;
+}
+
+header h1 span {
+    color: rgb(0, 204, 205);
+}
+
+/* CAROUSEL */
+.carousel {
+    background-image: url("../img/b4.jpg");
+    height: 800px;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+
+    /* Cách căn này chỉ dùng cho khi thẻ cha flex có 1 thẻ con */
+    /* Nếu thẻ cha có 2 con thì sẽ không căn được mà sẽ đưa 2 thằng con về cùng 1 hàng */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ABOUT */
+.about {
+    margin: 70px 0;
+    text-align: center;
+}
+
+.about__content {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.about__icon {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0 30px;
+}
+
+.about__icon i {
+    border: solid 1px gray;
+    padding: 35px;
+    font-size: 1.3rem;
+    border-radius: 50%;
+    margin: 20px 0;
+}
+
+.about__icon p {
+    color: gray;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    padding: 0 5px;
+    line-height: 30px;
+}
+
+.about__aboutus h3 {
+    color: rgb(0, 204, 205);
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.about__aboutus p {
+    letter-spacing: 1.5px;
+    line-height: 30px;
+}
+
+/* NUMBER */
+.number {
+    background-color: rgb(0, 204, 205);
+    padding: 70px 0;
+
+}
+
+.number__content {
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    justify-content: space-between;
+    text-align: center;
+    padding-top: 45px;
+}
+
+.number__item .num {
+    color: white;
+    font-size: 3.5rem;
+    font-weight: 560;
+}
+
+.number__item p:last-child {
+    color: black;
+    font-size: 2rem;
+    font-weight: 540;
+    padding-top: 10px;
+}
+
+
+/* BLOG */
+.blog {
+    margin: 70px 0;
+}
+
+.blog__tower {
+    display: flex;
+    width: 85%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.blog__item {
+    padding: 0px 15px;
+    margin-top: 40px;
+}
+
+.blog__item img {
+    width: 100%;
+    background-image: cover;
+}
+
+.blog__detail {
+    background-color: rgb(239, 239, 239);
+    padding: 20px;
+}
+
+.blog__detail p {
+    color: black;
+    letter-spacing: 1.75px;
+    line-height: 25px;
+    padding-bottom: 10px;
+}
+
+.blog__detail span {
+    color: rgb(0, 204, 205);
+    font-size: 1.5rem;
+    font-weight: 550;
+    display: block;
+    padding-bottom: 10px;
+
+}
+
+.blog button {
+    padding: 8px 20px;
+    background-color: black;
+    color: rgb(0, 204, 205);
+    font-weight: 400;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+
+.blog__house {
+    margin: 70px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog__house img {
+    width: 80%;
+}
+
+.blog__house .blog__info {
+    text-align: center;
+    padding: 45px;
+    width: 100%;
+    background-color: rgb(0, 204, 205);
+}
+
+.blog__info h3 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.blog__info p {
+    color: white;
+    line-height: 35px;
+    padding-bottom: 20px;
+    font-weight: 550;
+}
+
+/* PORTFOLIO */
+.portfolio__content {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px 30px;
+    padding: 40px 0;
+}
+
+.portfolio__content img {
+    width: 100%;
+    display: block;
+}
+
+.portfolio__sub {
+    margin: 30px 0;
+    background-color: rgb(0, 204, 205);
+    text-align: center;
+}
+
+.sub__content {
+    width: 60%;
+    margin: 0 auto;
+    padding: 70px 0;
+}
+
+.sub__content p {
+    color: white;
+    font-weight: 300;
+    margin: 65px 0 30px;
+    letter-spacing: 1px;
+    line-height: 23px;
+}
+
+.sub__content input {
+    padding: 15px;
+    font-weight: 800;
+    border: rgba(226, 226, 226, 0.836);
+    width: 550px;
+    margin-bottom: 20px;
+
+}
+
+.sub__content button {
+    padding: 8px 50px;
+    color: white;
+    background-color: black;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+/* AGENTS / TEAM*/
+.agent {
+    margin: 70px 0 15px;
+}
+
+.agent__content {
+    display: flex;
+    justify-content: space-between;
+    width: 82%;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.agent__content img {
+    width: 100%;
+    display: block;
+}
+
+.agent__detail {
+    background-color: rgb(54, 54, 54);
+    text-align: center;
+    padding: 20px 40px 10px;
+    color: white;
+}
+
+.agent__name {
+    font-size: 1.3rem;
+    color: rgb(0, 204, 205);
+    font-weight: 600;
+}
+
+.agent__detail p:nth-child(2) {
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 6px 0 8px;
+}
+
+.agent__socials i {
+    font-size: 0.75rem;
+    border: solid 2px white;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    margin: 9px;
+}
+
+.agent iframe {
+    width: 100%;
+}
+
+.agent .map {
+    padding: 15px;
+    background-color: rgb(196, 187, 187);
+    border: solid 2px rgb(0, 204, 205);
+}
+
+/* CONTACT */
+.contact {
+    margin: 60px 0;
+}
+
+.contact__content {
+    padding-top: 30px;
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.contact__info input {
+    display: block;
+    width: 100%;
+    margin-bottom: 25px;
+    padding: 12px 340px 12px 12px;
+    border: white;
+    border-bottom: solid 2.2px rgb(165, 165, 165);
+    color: rgb(221, 215, 215);
+    background-color: rgb(238, 236, 236);
+    font-size: 0.9rem;
+}
+
+.contact__info ::placeholder {
+    color: rgba(128, 128, 128, 0.6);
+    font-weight: 600;
+}
+
+.contact__message {
+    width: 527px;
+}
+
+.contact__message textarea {
+    color: rgba(128, 128, 128, 0.6);
+    padding: 12px;
+    background-color: rgb(239, 239, 239);
+    font-size: 0.9rem;
+    font-weight: 600;
+    width: 527px;
+    height: 180px;
+    border: none;
+    border-bottom: solid 2.2px rgb(165, 165, 165);
+}
+
+.contact__message button {
+    color: white;
+    background-color: black;
+    width: 527px;
+    margin-top: 18px;
+    height: 42.19px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/* FOOTER */
+footer {
+    background-color: rgb(0, 204, 205);
+    text-align: center;
+}
+
+.footer__content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.footer__text {
+    color: white;
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-right: 10px;
+}
+
+.footer__text span {
+    color: red;
+}
+
+.footer__social i {
+    color: white;
+    border: 1px solid white;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    margin-left: 15px;
+    font-size: 1.2rem;
+}
+
+/* Back to top */
+.backtoTop {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+/* code thư viện */
+.cd-top--is-visible {
+    /* // back-to-top button visible */
+    visibility: visible;
+    opacity: 1;
+}
+
+.backtoTop i {
+    color: #fc2e50;
+    font-size: 2rem;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 36px;
+    border: solid 3px #fc2e50;
+    border-radius: 50%;
+}
